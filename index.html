@@ -42,17 +42,23 @@
             }
             button {
                 background-color: #4caf50;
+                color: white;
+                padding: 5px;
+                border: none;
+            }
+            button:hover{
+                background-color: #4caf50;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <h2 style="text-align: center;">AlertifyMe!</h2>
+            <h2 style="text-align: center">AlertifyMe!</h2>
 
             <label for="">Enter reminder:</label>
-            <input type="text" id="title" />
+            <input type="text" id="title"/>
             <label for="">Reminder description:</label>
-            <input type="text" id="description" />
+            <input type="text" id="description"/>
             <label for="">Date: </label>
             <input type="date" id="date" />
             <label for="">Time:</label>
@@ -75,13 +81,13 @@
             </table>
         </div>
 
-        <audio src="notifcationsoundeffect.mp3" id=""notificationSound></audio>
+        <audio src="notificationsoundeffect.mp3" id="notificationSound"></audio>
 
         <script>
             // NOTIFICATION ACCESS -- need to para mag-notify
-            if ("Notification" in window){
+            if ("Notification" in window) {
                 Notification.requestPermission().then(function (permision){
-                    if(Notification.permission !== "granted"){
+                    if(Notification.permission !== "granted") {
                         alert("Please allow notification access!")
                         location.reload();
                     }
