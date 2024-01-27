@@ -1,2 +1,2 @@
 # AlertifyMe-
-Reminders app para kay JovenBakla69
+A simple, user-friendly reminders web application designed in HTML/CSS.
